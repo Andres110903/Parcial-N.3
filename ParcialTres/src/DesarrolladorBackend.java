@@ -37,9 +37,7 @@ public class DesarrolladorBackend extends Empleado implements OperacionEmpleado{
 	@Override
 	public double devolverSalario() {
 		// TODO Auto-generated method stub
-		salario = SALARIO_MINIMO + AUMENTO_VARIABLE;
-		salario = DESCUENTO_EPS + DESCUENTO_FP;
-		salario = salario/100;
+		salario = ((SALARIO_MINIMO + AUMENTO_VARIABLE)*(DESCUENTO_EPS + DESCUENTO_FP))/100;
 		return salario;
 	}
 	
